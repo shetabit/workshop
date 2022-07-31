@@ -1,8 +1,8 @@
 ## Shetab workshops
 <p>All the source codes of the workshops</p>
-
 <hr>
-### SOLID
+
+### SOLID Principles
 <p>Located in `app/Solid` folder.</p>
 <h3>Resources:</h3>
 <h6>Book: Dive IntoDESIGN PATTERNS - Alexander Shvets</h6>
