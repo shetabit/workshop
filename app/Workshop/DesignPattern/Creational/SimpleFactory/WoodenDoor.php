@@ -4,9 +4,9 @@ namespace App\Workshop\DesignPattern\Creational\SimpleFactory;
 
 class WoodenDoor implements Door
 {
-    protected $width;
+    protected float $width;
 
-    protected $height;
+    protected float $height;
 
     public function __construct(float $width, float $height)
     {
