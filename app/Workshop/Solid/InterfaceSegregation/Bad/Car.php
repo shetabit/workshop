@@ -2,8 +2,8 @@
 
 namespace App\Workshop\Solid\InterfaceSegregation\Bad;
 
-class Car implements Vehicle {
-
+class Car implements Vehicle
+{
     public function drive()
     {
         echo 'Driving a car!';

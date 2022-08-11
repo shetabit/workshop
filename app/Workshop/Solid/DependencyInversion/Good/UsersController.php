@@ -2,7 +2,6 @@
 
 namespace App\Workshop\Solid\DependencyInversion\Good;
 
-use App\Models\User;
 use App\Repositories\UserRepository;
 use Carbon\Carbon;
 
@@ -13,7 +12,7 @@ class UsersController
         $users = $repository->getAfterDate(Carbon::yesterday());
 
         return response()->json([
-            'users' => $users
+            'users' => $users,
         ]);
     }
 }

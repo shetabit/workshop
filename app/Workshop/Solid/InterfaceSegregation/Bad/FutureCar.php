@@ -14,5 +14,3 @@ class FutureCar implements Vehicle
         echo 'Flying a future car!';
     }
 }
-
-

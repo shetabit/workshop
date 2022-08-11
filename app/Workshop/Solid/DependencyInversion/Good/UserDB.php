@@ -18,7 +18,6 @@ class UserDB
         // Store the user into a database...
         $this->dbConnection->connect();
     }
-
 }
 
 $sqlServer = new SqlServerConnection();

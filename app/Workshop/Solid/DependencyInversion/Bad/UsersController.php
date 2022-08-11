@@ -14,7 +14,7 @@ class UsersController
             ->get();
 
         return response()->json([
-            'users' => $users
+            'users' => $users,
         ]);
     }
 }

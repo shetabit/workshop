@@ -14,5 +14,3 @@ class FutureCar implements DrivableVehicle, FlyableVehicle
         echo 'Flying a future car!';
     }
 }
-
-

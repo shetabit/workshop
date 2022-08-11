@@ -23,6 +23,5 @@ class PaymentController extends Controller
         } else {
             $payment->payWithWallet();
         }
-
     }
 }

@@ -2,8 +2,8 @@
 
 namespace App\Workshop\Solid\InterfaceSegregation\Bad;
 
-class Airplane implements Vehicle {
-
+class Airplane implements Vehicle
+{
     public function drive()
     {
         throw new \Exception('Not implemented method');

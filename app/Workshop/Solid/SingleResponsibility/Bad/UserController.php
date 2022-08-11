@@ -3,9 +3,7 @@
 namespace App\Workshop\Solid\SingleResponsibility\Bad;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Solid\UserStoreRequest;
 use App\Models\User;
-use App\Repositories\UserRepository;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -15,7 +13,7 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required',
         ]);
 
         $user->name = $request->name;
