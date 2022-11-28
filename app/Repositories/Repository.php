@@ -6,5 +6,9 @@ use Illuminate\Http\Request;
 
 interface Repository
 {
-    public function create(Request $request);
+//    public function list();
+//    public function findById(int $id);
+    public function create(array $inputs);
+//    public function update(int $id, array $inputs);
+//    public function delete(int $id);
 }

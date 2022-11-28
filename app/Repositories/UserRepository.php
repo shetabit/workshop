@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class UserRepository implements Repository
 {
-    public function create(Request $request): User
+    public function create(array $request): User
     {
         $user = new User();
         $user->name = $request->name;

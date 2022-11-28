@@ -1,0 +1,19 @@
+@extends('DummyExtends')
+
+@section('DummySection')
+
+	@if($errors->any())
+		<div class="alert alert-danger">
+			@foreach ($errors->all() as $error)
+				{{ $error }} <br>
+			@endforeach
+		</div>
+	@endif
+
+	{{ Form::model(DummyCreateVariableSing$, array('route' => array('DummyVariable.update', DummyCreateVariableSing$->id), 'method' => 'PUT')) }}
+
+DummyFormCreate
+		{{ Form::submit('Edit', array('class' => 'btn btn-primary')) }}
+
+	{{ Form::close() }}
+@stop
