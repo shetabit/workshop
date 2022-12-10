@@ -8,3 +8,6 @@ echo $devManager->takeInterview() . '<br>'; // Output: Asking about design patte
 
 $marketingManager = new MarketingManager();
 echo $marketingManager->takeInterview(); // Output: Asking about community building.
+
+
+//laravel example: view()
