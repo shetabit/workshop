@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PaymentController;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -30,3 +31,8 @@ Route::post('/users', function (Request $request) {
 
     return back()->with('success', 'User created successfully.');
 });
+
+
+Route::get('/payments', [PaymentController::class, 'paymentForm']);
+Route::post('/payments', [PaymentController::class, 'payment']);
+Route::any('/payments/verify', [PaymentController::class, 'verify']);

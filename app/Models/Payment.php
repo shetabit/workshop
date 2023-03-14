@@ -9,6 +9,13 @@ class Payment extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'amount',
+        'token',
+        'tracking_code',
+        'status'
+    ];
+
     public function payWithCreditCard()
     {
         //paying with credit card
