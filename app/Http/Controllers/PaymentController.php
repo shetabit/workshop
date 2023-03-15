@@ -52,7 +52,7 @@ class PaymentController extends Controller
                 $payment->update([
                     'status' => true,
                     'tracking_code' => $receipt->getReferenceId()
-                ], $payment->id);
+                ]);
 
             });
 
@@ -63,7 +63,7 @@ class PaymentController extends Controller
             //Update payment
             $payment->update([
                 'status' => false
-            ], $payment->id);
+            ]);
 
             $message = $exception->getMessage();
             $status = 'error';
