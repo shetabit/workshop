@@ -106,7 +106,7 @@ return [
             'apiPurchaseUrl' => 'https://ikc.shaparak.ir/api/v3/tokenization/make',
             'apiPaymentUrl' => 'https://ikc.shaparak.ir/iuiv3/IPG/Index/',
             'apiVerificationUrl' => 'https://ikc.shaparak.ir/api/v3/confirmation/purchase',
-            'callbackUrl' => 'http://localhost:8000/payments/verify',
+            'callbackUrl' => 'https://test.atlasmode.ir/payments/verify',
             'description' => 'payment using irankish',
             'terminalId' => '08142347',
             'password' => 'D23E66B4C9BDC450',
