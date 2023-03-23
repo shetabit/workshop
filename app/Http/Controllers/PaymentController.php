@@ -43,7 +43,6 @@ class PaymentController extends Controller
     public function verify(Request $request)
     {
         $payment = Payment::where('token', $request->input('token'))->first();
-        abort_unless($payment, 404);
 
         try {
             $receipt = ShetabitPayment::amount($payment->amount / 10)->transactionId($payment->token)->verify();
