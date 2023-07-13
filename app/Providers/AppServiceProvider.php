@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Interfaces\CityListInterface;
+use App\Services\FakeCityService;
+use App\Services\RealCityService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +16,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if ($this->app->isProduction()) {
+            $this->app->singleton(CityListInterface::class, RealCityService::class);
+        } else {
+            $this->app->singleton(CityListInterface::class, FakeCityService::class);
+        }
     }
 
     /**

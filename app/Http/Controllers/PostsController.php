@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http/Controllers;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
+use App\Interfaces\CityListInterface;
 use App\Models\Post;
 use App\Http\Requests\PostRequest;
 
@@ -25,8 +26,10 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(CityListInterface $cityList)
     {
+        $cities = $cityList->getList();
+
         return view('posts.create');
     }
 
